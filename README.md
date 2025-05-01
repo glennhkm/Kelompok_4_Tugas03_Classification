@@ -1,0 +1,6 @@
+## Anggota Tim (Kelompok 4)
+- Glenn Hakim (2208107010072)
+- Ahmad Syah Ramadhan (2208107010033)
+- Andika Pebriansyah (2208107010058)
+- Nisa Rianti (2208107010018)
+- Nuri Masyithah (2208107010006)
