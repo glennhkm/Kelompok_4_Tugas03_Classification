@@ -84,9 +84,9 @@ Beberapa model telah diuji:
 
 Model Logistic Regression menunjukkan bahwa faktor yang paling meningkatkan peluang penempatan kerja adalah pengalaman kerja dan performa akademik yang konsisten (ssc_percentage, overall_academic_avg, hsc_percentage). Sebaliknya, spesialisasi Marketing & HR, nilai MBA tinggi, dan perbedaan nilai antar jenjang pendidikan justru menurunkan peluang. Faktor seperti jenis kelamin dan jurusan memiliki pengaruh kecil terhadap hasil akhir.
 
-================================================================================
-KESIMPULAN HASIL ANALISIS
-================================================================================
+
+#### KESIMPULAN HASIL ANALISIS
+
 Model terbaik adalah Logistic Regression (Optimized) dengan akurasi 0.8704
 ROC AUC: 0.9364
 Log Loss: 0.3064
