@@ -78,9 +78,40 @@ Beberapa model telah diuji:
 
 ---
 
-## 📦 Requirements
+## Hasil Analisis
 
-Install semua dependensi dengan:
+![image](https://github.com/user-attachments/assets/ff33577d-ef3a-4015-8cd6-730c2196a33b)
 
-```bash
-pip install -r requirements.txt
+Model Logistic Regression menunjukkan bahwa faktor yang paling meningkatkan peluang penempatan kerja adalah pengalaman kerja dan performa akademik yang konsisten (ssc_percentage, overall_academic_avg, hsc_percentage). Sebaliknya, spesialisasi Marketing & HR, nilai MBA tinggi, dan perbedaan nilai antar jenjang pendidikan justru menurunkan peluang. Faktor seperti jenis kelamin dan jurusan memiliki pengaruh kecil terhadap hasil akhir.
+
+## Hasil Analisis
+================================================================================
+KESIMPULAN HASIL ANALISIS
+================================================================================
+Model terbaik adalah Logistic Regression (Optimized) dengan akurasi 0.8704
+ROC AUC: 0.9364
+Log Loss: 0.3064
+
+Metrik Evaluasi Model Terbaik:
+Precision (Ditempatkan): 0.9167
+Recall (Ditempatkan): 0.8919
+F1-Score (Ditempatkan): 0.9041
+
+Preprocessing dan feature engineering yang diterapkan:
+1. Penanganan missing values (tidak ada missing values dalam dataset)
+2. One-Hot Encoding untuk variabel kategorikal
+3. Standardisasi fitur numerik
+4. Pembuatan fitur baru: selisih nilai, rata-rata akademik, dan rasio
+5. Pemilihan fitur menggunakan SelectKBest
+6. Penanganan ketidakseimbangan kelas menggunakan SMOTE
+7. Tuning hyperparameter untuk meningkatkan performa model
+
+Temuan Penting:
+1. Fitur yang paling berpengaruh dalam prediksi penempatan kerja adalah persentase pada ujian penempatan (emp_test_percentage)
+2. Pengalaman kerja juga berpengaruh signifikan terhadap keberhasilan penempatan kerja
+3. Model berhasil mencapai akurasi lebih dari 93%, yang mengindikasikan prediksi yang sangat baik
+...
+1. Fokus pada peningkatan performa di ujian penempatan kerja
+2. Mendapatkan pengalaman kerja sebelum melamar pekerjaan sangat direkomendasikan
+3. Fokus pada spesialisasi yang memiliki tingkat penempatan lebih tinggi
+4. Mempertahankan nilai akademik yang konsisten di setiap tingkat pendidikan
